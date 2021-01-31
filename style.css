@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+
+#logo{
+    float: left;
+}
+
+#title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    font-weight: 900;
+    color: rgb(221, 42, 42);
+    padding-top: 8%;
+}
+
+.inscription{
+    margin-top: 10%;
+}
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#connexion, #inscription{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 2.7em;
+    margin: 0;
+}
+.paragraphe{
+    margin: 20px 0;
+}
+.paragraphe{
+    opacity: 0.81;
+    font-size: 18px;
+}
+.btn-link, input[type="submit"]{
+    display: block;
+    line-height: 60px;
+    border: 1px solid red;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    border-radius: 9999px;
+    color: red;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: .2s;
+    cursor: pointer;
+}
+/*
+    connexion
+*/
+#connexion{
+    background: rgb(221, 42, 42);
+    text-align: center;
+}
+
+#connexion .title{
+    color: #fff;
+}
+
+#connexion .paragraphe{
+    color: #fff;
+    
+}
+#connexion .connexion:hover{
+    background-color: #fff;
+    color: rgb(221, 42, 42);
+}
+/*
+    inscription
+*/
+
+#inscription .title{
+    color: rgb(221, 42, 42);
+}
+
+
+.group-form{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.group-form > div{
+    position: absolute;
+    width: 40px;
+    height: 40px; 
+    top: 2px;
+    left: 3px;
+    
+}
+
+.group-form .icon-user{
+    background: url(../images/user.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.group-form .icon-mail{
+    background: url(../images/mail.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.group-form .icon-password{
+    background: url(../images/password.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.group-form input[type="text"],
+.group-form input[type="email"],
+.group-form input[type="password"]{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #707070;
+    border-radius: 9999px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+#inscription .inscription{
+    background: rgb(221, 42, 42);
+    margin: 0 auto;
+}
+
+#inscription .inscription:hover{
+    background: #fff;
+    color: #198EF5;
+    border: 1px solid rgb(221, 42, 42);
+}
+
+@media (min-width: 992px){
+    .container{
+        flex-direction: row;
+    }
+
+    #connexion{
+        width: 45%;
+        text-align: center;
+    }
+
+    #inscription{
+        width: 55%;
+    }
+}
+
+.load{position:absolute;top:82%;left:16%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into the project*/
+  width:100px;
+  height:100px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#19A68C;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+
+.presentation{
+  margin-top: 5%;
+  color:  rgb(221, 42, 42);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin-left: 35%;
+}
+
+.article{
+  font-style: oblique;
+  font-weight: 700;
+  text-align: center;
+}
+
+.actions{
+  margin-top: 5%;
+  color: rgb(221, 42, 42);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin-left: 35%;
+}
+
+.article1{
+  font-style: oblique;
+  font-weight: 700;
+}
+
+footer{
+    padding-top: 0px;
+  }
+  
+  .footer-distributed{
+    background-color:  rgb(221, 42, 42);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+   
+    padding: 40px 50px;
+    margin-top: 80px;
+  }
+   
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+   
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+   
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+   
+   
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links :hover{
+    color: gold;
+  }
+   
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+  }
+   
+  .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 25%;
+  }
+   
+   
+  .footer-distributed .footer-center{
+    width: 35%;
+    margin-top: 5%;
+  }
+   
+  .footer-distributed .footer-center i{
+    background-color:  rgb(221, 42, 42);
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+   
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+   
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+  }
+   
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+   
+  .footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+  }
+   
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+   
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+   
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+   
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+   
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:   rgb(221, 42, 42);
+    border-radius: 2px;
+   
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+   
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  .edition{
+    margin-left: 70%;
+    margin-top: 6%;
+
+  }
+  a{
+    border: 2px solid rgb(207, 51, 34);
+    color: rgb(0, 0, 0);
+    border-radius: 20%  0 20% 0;
+
+    text-align: center;
+  }
+  .inout{
+    margin-left: 55%;
+  }
+  
+   
+  @media (max-width: 880px) {
+   
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    
+    }
+   
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+   
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+  
+    }
+   
+  }
+  
